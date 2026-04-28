@@ -1,52 +1,61 @@
 
+const menu = 7;
 
-const menu = 1;
-
-    switch (opcao) {
-      case "1": 
-      exercicio1(); 
+    switch (menu) {
+      case 1: 
+       console.log("Exercício 1 selecionando. Executando...\n");
+      ex1(); 
       break;
 
-      case "2": 
-      exercicio2(); 
+      case 2: 
+      console.log("Exercício 2 selecionando. Executando...\n");
+      ex2(); 
       break;
 
-      case "3": 
-      exercicio3(); 
+      case 3: 
+      console.log("Exercício 3 selecionando. Executando...\n");
+      ex3(); 
       break;
 
-      case "4": 
-      exercicio4(); 
+      case 4: 
+      console.log("Exercício 4 selecionando. Executando...\n");
+      ex4(); 
       break;
 
-      case "5": 
-      exercicio5(); 
+      case 5: 
+       console.log("Exercício 5 selecionando. Executando...\n");
+      ex5(); 
       break;
 
-      case "6": 
-      exercicio6(); 
+      case 6: 
+     console.log("Exercício 6 selecionando. Executando...\n");
+      ex6(); 
       break;
 
-      case "7":
-      exercicio7(); 
+      case 7:
+          console.log("Exercício 7 selecionando. Executando...\n");
+      ex7(); 
       break;
 
-      case "8": 
-      exercicio8(); 
+      case 8: 
+        console.log("Exercício 8 selecionando. Executando...\n");
+      ex8(); 
       break;
 
-      case "9": 
-      exercicio9(); 
+      case 9: 
+        console.log("Exercício 9 selecionando. Executando...\n");
+      ex9(); 
       break;
 
-      case "10": 
-      exercicio10(); 
+      case 10: 
+        console.log("Exercício 10 selecionando. Executando...\n");
+      ex10(); 
       break;
     }
 
 // 1. Listar nomes com for...of
 function ex1() {
-  const nomes = ["Ana", "Bruno", "Carlos", "Diana", "Eduardo"];
+  const nomes = ["Isa", "Ana", "Lola", "Duda", "Isinha"];
   for (const nome of nomes) {
     console.log(nome);
   }
@@ -67,9 +76,9 @@ function ex2() {
 // 3. Exibir propriedades com for...in
 function ex3() {
   const pessoa = {
-    nome: "João",
-    idade: 25,
-    cidade: "São Paulo"
+    nome: "Kemmy",
+    idade: 15,
+    cidade: "Sorocaba"
   };
 
   for (const chave in pessoa) {
@@ -89,13 +98,11 @@ function ex4() {
   console.log("Total de propriedades:", count);
 }
 
-// ===============================
-// MÉDIOS
-// ===============================
+
 
 // 5. Concatenar nomes
 function ex5() {
-  const nomes = ["Ana", "Bruno", "Carlos"];
+  const nomes = ["Kevin", "Matheus", "Ryan"];
   let resultado = "";
 
   for (const nome of nomes) {
@@ -117,8 +124,9 @@ function ex6() {
 // 7. Incrementar idades
 function ex7() {
   const pessoas = {
+    Kemmy: 15,
     Ana: 20,
-    Bruno: 25,
+    Bruna: 25,
     Carlos: 30
   };
 
@@ -141,9 +149,7 @@ function ex8() {
   console.log(resultado);
 }
 
-// ===============================
-// DIFÍCEIS
-// ===============================
+
 
 // 9. Valores únicos com Set
 function ex9() {
@@ -167,7 +173,4 @@ function ex10() {
   console.log(contagem);
 }
 
-// ===============================
-// INICIALIZAÇÃO
-// ===============================
-menu();
+
